@@ -1,0 +1,8 @@
+Lockdown	https://extdist.wmflabs.org/dist/extensions/Lockdown-REL1_23-d08bcd8.tar.gz
+Arrays	https://extdist.wmflabs.org/dist/extensions/Arrays-REL1_23-261b2d8.tar.gz
+SemanticFormsInputs	https://github.com/wikimedia/mediawiki-extensions-SemanticFormsInputs/archive/0.10.1.zip
+SemanticInternalObjects	https://extdist.wmflabs.org/dist/extensions/SemanticInternalObjects-REL1_23-021b137.tar.gz
+Widgets	https://extdist.wmflabs.org/dist/extensions/Widgets-REL1_23-e30386c.tar.gz
+ReplaceText	https://extdist.wmflabs.org/dist/extensions/ReplaceText-REL1_23-9fdb582.tar.gz
+
+
