@@ -11,7 +11,10 @@ $wgRestrictDisplayTitle = false;
 $wgAllowExternalImages = true;
 
 # Clean URL
-$wgArticlePath = "/$1";
+$wgScriptPath       = "";
+$wgArticlePath      = "/$1";
+$wgUsePathInfo      = true;
+$wgScriptExtension  = ".php";
 
 # Skin
 $wgDefaultSkin='chameleon';
