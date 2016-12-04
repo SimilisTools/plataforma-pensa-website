@@ -18,10 +18,16 @@ $wgScriptExtension  = ".php";
 
 # Skin
 $wgDefaultSkin='chameleon';
-$egChameleonLayoutFile= __DIR__ . '/skins/plataforma/layouts/plataforma.xml';
-$egChameleonExternalStyleModules = array(       __DIR__."/skins/plataforma/styles/main.less" => $wgScriptPath."/skins/plataforma/styles" );
-\Bootstrap\BootstrapManager::getInstance()->addCacheTriggerFile( __DIR__ . '/skins/plataforma/styles/main.less' );
-require_once "$IP/skins/plataforma/components/ToolbarHorizontal_plataforma.php";
+#$egChameleonLayoutFile= __DIR__ . '/skins/plataforma/layouts/plataforma.xml';
+#$egChameleonExternalStyleModules = array(       __DIR__."/skins/plataforma/styles/main.less" => $wgScriptPath."/skins/plataforma/styles" );
+#\Bootstrap\BootstrapManager::getInstance()->addCacheTriggerFile( __DIR__ . '/skins/plataforma/styles/main.less' );
+#require_once "$IP/skins/plataforma/components/ToolbarHorizontal_plataforma.php";
+
+# Extensions
+require_once "$IP/extensions/Arrays/Arrays.php";
+require_once "$IP/extensions/PageForms/PageForms.php";
+require_once "$IP/extensions/Lockdown/Lockdown.php";
+require_once "$IP/extensions/SemanticInternalObjects/SemanticInternalObjects.php";
 
 # Semantic MediaWiki stuff
 

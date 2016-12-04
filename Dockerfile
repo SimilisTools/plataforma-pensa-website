@@ -77,17 +77,19 @@ RUN rm -rf /var/www/images; mkdir -p  /var/www/w/images
 
 RUN cd /var/www/w/extensions \
 	&& curl -fSL https://extdist.wmflabs.org/dist/extensions/Arrays-REL1_23-261b2d8.tar.gz -o /tmp/Arrays.tar.gz \
-	&& curl -fSL https://github.com/wikimedia/mediawiki-extensions-SemanticFormsInputs/archive/0.10.1.zip -o /tmp/SemanticFormsInputs.tar.gz \
 	&& curl -fSL https://extdist.wmflabs.org/dist/extensions/SemanticInternalObjects-REL1_23-021b137.tar.gz -o /tmp/SemanticInternalObjects.tar.gz \
 	&& curl -fSL https://extdist.wmflabs.org/dist/extensions/Widgets-REL1_23-e30386c.tar.gz -o /tmp/Widgets.tar.gz \
-	&& curl -fSL https://extdist.wmflabs.org/dist/extensions/Lockdown-REL1_23-d08bcd8.tar.gz -o /tmp/Lockdown.tar.gz
+	&& curl -fSL https://extdist.wmflabs.org/dist/extensions/Lockdown-REL1_23-d08bcd8.tar.gz -o /tmp/Lockdown.tar.gz \
+	&& curl -fSL https://github.com/wikimedia/mediawiki-extensions-PageForms/archive/4.0.2.zip -o /tmp/PageForms.tar.gz
 
-RUN mkdir -p /var/www/w/extensions/Arrays; tar -xf /tmp/Arrays.tar.gz -C /var/www/w/extensions/Arrays --strip-components=1 \
-	&& mkdir -p /var/www/w/extensions/SemanticFormsInputs; tar -xf /tmp/SemanticFormsInputs.tar.gz -C /var/www/w/extensions/SemanticFormsInputs --strip-components=1 \
-	&& mkdir -p /var/www/w/extensions/SemanticInternalObjects; tar -xf /tmp/SemanticInternalObjects.tar.gz -C /var/www/w/extensions/SemanticInternalObjects --strip-components=1 \
-	&& mkdir -p /var/www/w/extensions/Widgets; tar -xf /tmp/Widgets.tar.gz -C /var/www/w/extensions/Widgets --strip-components=1 \
-	&& mkdir -p /var/www/w/extensions/Lockdown; tar -xf /tmp/Lockdown.tar.gz -C /var/www/w/extensions/Lockdown --strip-components=1 \
-&& rm -f /tmp/*tar.gz
+RUN mkdir -p /var/www/w/extensions/Arrays; tar -xf /tmp/Arrays.tar.gz -C /var/www/w/extensions/Arrays --strip-components=1
+RUN mkdir -p /var/www/w/extensions/SemanticInternalObjects; tar -xf /tmp/SemanticInternalObjects.tar.gz -C /var/www/w/extensions/SemanticInternalObjects --strip-components=1
+RUN mkdir -p /var/www/w/extensions/Widgets; tar -xf /tmp/Widgets.tar.gz -C /var/www/w/extensions/Widgets --strip-components=1
+RUN mkdir -p /var/www/w/extensions/Lockdown; tar -xf /tmp/Lockdown.tar.gz -C /var/www/w/extensions/Lockdown --strip-components=1
+RUN mkdir -p /var/www/w/extensions/PageForms; tar -xf /tmp/PageForms.tar.gz -C /var/www/w/extensions/PageForms --strip-components=1
+
+
+RUN rm -f /tmp/*tar.gz
 
 RUN chown -R www-data:www-data /var/www/w
 
