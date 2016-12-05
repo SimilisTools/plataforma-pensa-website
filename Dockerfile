@@ -80,7 +80,7 @@ RUN cd /var/www/w/extensions \
 	&& curl -fSL https://extdist.wmflabs.org/dist/extensions/SemanticInternalObjects-REL1_23-021b137.tar.gz -o /tmp/SemanticInternalObjects.tar.gz \
 	&& curl -fSL https://extdist.wmflabs.org/dist/extensions/Widgets-REL1_23-e30386c.tar.gz -o /tmp/Widgets.tar.gz \
 	&& curl -fSL https://extdist.wmflabs.org/dist/extensions/Lockdown-REL1_23-d08bcd8.tar.gz -o /tmp/Lockdown.tar.gz \
-	&& curl -fSL https://github.com/wikimedia/mediawiki-extensions-PageForms/archive/4.0.2.zip -o /tmp/PageForms.tar.gz
+	&& curl -fSL https://github.com/wikimedia/mediawiki-extensions-PageForms/archive/4.0.2.tar.gz -o /tmp/PageForms.tar.gz
 
 RUN mkdir -p /var/www/w/extensions/Arrays; tar -xf /tmp/Arrays.tar.gz -C /var/www/w/extensions/Arrays --strip-components=1
 RUN mkdir -p /var/www/w/extensions/SemanticInternalObjects; tar -xf /tmp/SemanticInternalObjects.tar.gz -C /var/www/w/extensions/SemanticInternalObjects --strip-components=1
