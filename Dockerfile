@@ -33,6 +33,9 @@ RUN MEDIAWIKI_DOWNLOAD_URL="https://releases.wikimedia.org/mediawiki/$MEDIAWIKI_
 	&& gpg --verify mediawiki.tar.gz.sig \
 	&& tar -xf mediawiki.tar.gz -C /var/www/w --strip-components=1
 
+# Copy content files
+COPY content/ /content/
+
 COPY composer.json /var/www/w
 
 RUN set -x; echo "Host is $MYSQL_HOST"
@@ -97,6 +100,10 @@ RUN chown -R www-data:www-data /var/www/w
 VOLUME /var/www/w/images
 
 RUN cd /var/www/w; php maintenance/update.php
+
+# Add content
+COPY importContent.php /tmp/importContent.php
+RUN php /tmp/importContent.php
 
 # Update Semantic MediaWiki
 RUN cd /var/www/w; php extensions/SemanticMediaWiki/maintenance/rebuildData.php -ftpv
