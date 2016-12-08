@@ -1,0 +1,35 @@
+<noinclude>
+Aquest és el formulari 'Ponent'.
+Per crear una pàgina amb aquest formulari, entreu el nom de la pàgina a continuació;
+si la pàgina amb aquest nom ja existeix, s'obrirà un formulari per editar-la.
+
+{{#formlink:form=Ponent|link text=Ponent|link type=button}} 
+
+</noinclude><includeonly>
+{{{info|page name=Ponent:<Ponent[Cognoms]>, <Ponent[Nom]>}}}
+<div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"></div>
+{{{for template|Ponent|label=Ponent}}}
+{| class="formtable"
+! Nom:
+| {{{field|Nom|input type=text|mandatory}}}
+|-
+! Cognoms:
+| {{{field|Cognoms|input type=text|mandatory}}}
+|-
+! Foto:
+| {{{field|Foto|uploadable|image preview|default filename=Ponent-{{PAGENAME}}.jpg}}}
+|-
+! Data Naixement:
+| {{{field|Data Naixement|input type=datetimepicker}}}
+|-
+! Lloc Naixement:
+| {{{field|Lloc Naixement|input type=text}}}
+|-
+! Institució:
+| {{{field|Institució|input type=text}}}
+|}
+{{{end template}}}
+{{{standard input|free text|editor=wikieditor|rows=10}}}
+{{{standard input|save}}}{{{standard input|cancel}}}
+</includeonly>
+

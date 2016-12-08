@@ -1,0 +1,8 @@
+Pàgina inicial de prova
+
+
+{{#forminput:form=Entitat|button text=Entitat|query string=namespace=Entitat}} 
+{{#forminput:form=Lloc|button text=Lloc|query string=namespace=Lloc}} 
+{{#formlink:form=Ponent|link text=Ponent|link type=button}} 
+
+

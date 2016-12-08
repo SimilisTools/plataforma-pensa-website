@@ -1,0 +1,25 @@
+<noinclude>
+Aquest és el formulari 'Lloc'.
+Per crear una pàgina amb aquest formulari, entreu el nom de la pàgina a continuació;
+si la pàgina amb aquest nom ja existeix, s'obrirà un formulari per editar-la.
+
+
+{{#forminput:form=Lloc|query string=namespace=Lloc}}
+
+</noinclude><includeonly>
+<div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"></div>
+{{{for template|Lloc|label=Lloc}}}
+{| class="formtable"
+! Nom:
+| {{{field|Nom|mandatory}}}
+|-
+! Adreça
+|  {{{field|Adreça}}}
+|-
+! Coordenades:
+| {{{field|Coordenades|input type=googlemaps}}}
+|}
+{{{end template}}}
+{{{standard input|free text|editor=wikieditor|rows=10}}}
+{{{standard input|save}}}{{{standard input|cancel}}}
+</includeonly>

@@ -1,0 +1,34 @@
+<noinclude>
+Aquesta és la plantilla 'Lloc'.
+Que ha de ser cridada en el format següent:
+<pre>
+{{Lloc
+|Nom=
+|Adreça=
+|Coordenades=
+}}
+</pre>
+Edita la pàgina per veure el text de la plantilla.
+</noinclude><includeonly>__NOTOC__{{#seo:
+ |title={{PAGENAME}} - {{SITENAME}}
+ |description={{PAGENAME}} - {{{Adreça|}}}
+ }}
+{{Menu2016}}
+<div id="lloc" itemscope="" itemtype="http://schema.org/Place">
+===<span itemprop="name">[[Has Name::{{PAGENAME}}]]</span>===
+<div class="taula-lloc">
+<div class="address" itemprop="address" content="{{{Adreça|}}}, Barcelona">[[Has Address::{{{Adreça|}}}|]] {{#if:{{{Adreça|}}}|[https://maps.google.com/maps/?q={{urlencode:{{{Adreça|}}}, Barcelona}} {{{Adreça|}}}]}}</div>
+<div class="left">
+<div class="lloc-actes">
+{{#arraydefine:festivals|Festival 2016,Festival 2015,Festival 2014}}
+{{#arrayprint:festivals |
+|@@@@ | {{FestivalXLloc|{{FULLPAGENAME}}|@@@@}} }}
+</div></div>
+<div class="right">
+<div class="mapa"><span class="coordinates" itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">[[Has Coordinates::{{{Coordenades|}}}| ]]</span>
+{{#display_point:{{{Coordenades}}}| service=googlemaps |width=300|height=300|controls=zoom|zoom=16|type=roadmap}}
+</div>
+</div>
+</div></div>
+[[Categoria:Llocs]]
+</includeonly>

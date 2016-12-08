@@ -1,0 +1,102 @@
+<noinclude>
+Aquest és el formulari 'Recurs'.
+Per crear una pàgina amb aquest formulari, entreu el nom de la pàgina a continuació;
+si la pàgina amb aquest nom ja existeix, s'obrirà un formulari per editar-la.
+
+
+{{#forminput:form=Recurs|query string=namespace=Recurs}}
+
+</noinclude><includeonly>
+<div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"></div>
+<h1>{{PAGENAME}}</h1>
+{{{for template|Recurs|label=Recurs}}}
+{| class="formtable"
+! Tipus: 
+| {{{field|Tipus|input type=dropdown|values=Text,Document PDF,Enllaç,Iframe,Imatge,Llibre,Revista|show on select=Imatge=>imatge;Llibre=>llibre;Revista=>revista;Iframe=>iframe;Document PDF=>pdf}}}
+|-
+! URL: 
+| {{{field|URL}}}
+|-
+! Relacionat:
+| {{{field|Relacionat|delimiter=¿¿|input type=listbox|values from namespace=Acte}}}
+|-
+! Descripció:
+| {{{field|Descripció|input type=text area|rows=3|editor=wikieditor}}}
+|-
+! Prioritat (com més petit sigui el número, més davant passa en una llista)
+| {{{field|Prioritat}}}
+|}
+{{{end template}}}
+<div id="llibre">
+{{{for template|Llibre}}}
+{| class="formtable"
+! Autor: 
+| {{{field|Autor|input type=text}}}
+|-
+! Editorial: 
+| {{{field|Editorial|input type=text}}}
+|-
+! Ciutat: 
+| {{{field|Ciutat|input type=text}}}
+|-
+! Any: 
+| {{{field|Any|input type=text}}}
+|-
+! ISBN:
+| {{{field|ISBN|input type=text}}}
+|}
+{{{end template}}}
+</div>
+<div id="revista">
+{{{for template|Revista}}}
+{| class="formtable"
+! Autor: 
+| {{{field|Autor|input type=text}}}
+|-
+! Volum: 
+| {{{field|Volum|input type=text}}}
+|-
+! Número: 
+| {{{field|Número|input type=text}}}
+|-
+! ISSN: 
+| {{{field|ISSN|input type=text}}}
+|}
+{{{end template}}}
+</div>
+<div id="imatge">
+{{{for template|Imatge}}}
+{| class="formtable"
+! URL de la imatge: 
+| {{{field|Imatge}}}
+|}
+{{{end template}}}
+</div>
+<div id="pdf">
+{{{for template|PDF}}}
+{| class="formtable"
+! Document:
+| {{{field|Document|uploadable|default filename=Recurs-{{PAGENAME}}.pdf}}}
+|-
+! Orientació:
+| {{{field|Orientació|input type=dropdown|values=Horitzontal,Vertical|default=Vertical}}}
+|}
+{{{end template}}}
+</div>
+<div id="iframe">
+{{{for template|Iframe}}}
+{| class="formtable"
+! URL de l'iframe: 
+| {{{field|IframeURL|input type=text}}}
+|-
+! Amplada: 
+| {{{field|Width|input type=text}}}
+|-
+! Alçària: 
+| {{{field|Height|input type=text}}}
+|}
+{{{end template}}}
+</div>
+{{{standard input|save}}} {{{standard input|cancel}}}
+</includeonly>
+

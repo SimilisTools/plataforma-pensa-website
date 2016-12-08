@@ -1,0 +1,25 @@
+<noinclude>
+Aquesta és la plantilla 'Entitat'.
+Que ha de ser cridada en el format següent:
+<pre>
+{{Entitat
+|Nom=
+|Logo=
+|URL=
+}}
+</pre>
+Edita la pàgina per veure el text de la plantilla.
+</noinclude><includeonly>{| class="wikitable"
+! Nom
+| [[Has Name::{{PAGENAME}}]] 
+|-
+! Logo
+| [[Has Image::Image:{{{Logo|}}}| ]][[Image:{{{Logo|}}}|100px]] 
+|-
+! URL
+| [[Has URL::{{{URL|}}}]] 
+|}
+
+[[Categoria:Entitats]]
+</includeonly>
+

@@ -1,0 +1,37 @@
+<noinclude>
+Aquesta és la plantilla 'Recurs'.
+Que ha de ser cridada en el format següent:
+<pre>
+{{Recurs
+|Títol=
+|Tipus=
+|URL=
+|DOI=
+|Relacionat=
+|Descripció=
+|Prioritat=
+}}
+</pre>
+Edita la pàgina per veure el text de la plantilla.
+</noinclude><includeonly>{| class="wikitable"
+! Títol
+| [[Has Title::{{PAGENAME}}]] 
+|-
+! Relacionat amb
+|  {{#arraymap:{{{Relacionat|}}}|¿¿|@@|[[Related To::Acte:@@]]}}
+|-
+! Tipus
+| [[Is Publication Type::{{{Tipus|}}}]] 
+|-
+! URL
+| [[Has URL::{{{URL|}}}]] 
+|-
+! Descripció
+| {{#set:Has Description={{{Descripció|}}}}}{{{Descripció|}}}
+|-
+! Prioritat (com més petit, més amunt en una llista)
+| [[Has Priority::{{{Prioritat|100}}}]]
+|}
+[[Categoria:Recursos]]
+</includeonly>
+

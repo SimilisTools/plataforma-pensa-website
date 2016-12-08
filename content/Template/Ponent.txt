@@ -1,0 +1,38 @@
+<noinclude>
+Aquesta és la plantilla 'Ponent'.
+Que ha de ser cridada en el format següent:
+<pre>
+{{Ponent
+|Nom=
+|Cognoms=
+|Foto=
+|Institució=
+|Data Naixement=
+|Lloc Naixement=
+|Institució=
+}}
+</pre>
+Edita la pàgina per veure el text de la plantilla.
+</noinclude><includeonly>{| class="wikitable"
+! Nom
+| [[Has PreName::{{{Nom|}}}]] 
+|-
+! Cognoms
+| [[Has Surname::{{{Cognoms|}}}]] 
+|-
+! Foto
+| [[Has Photo::{{{Foto|}}}]] 
+|-
+! Data Naixement
+| [[Has Birth Date::{{{Data Naixement|}}}]] 
+|-
+! Lloc Naixement
+| [[Has Birth Location::{{{Lloc Naixement|}}}]] 
+|-
+! Institució
+| [[Has Institution::{{{Institució|}}}]]
+|}
+{{DISPLAYTITLE:{{{Nom|}}} {{{Cognoms|}}}}}
+[[Categoria:Ponents]]
+</includeonly>
+

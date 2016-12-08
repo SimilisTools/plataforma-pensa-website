@@ -1,0 +1,40 @@
+<noinclude>
+Aquest és el formulari 'Entitat'.
+Per crear una pàgina amb aquest formulari, entreu el nom de la pàgina a continuació;
+si la pàgina amb aquest nom ja existeix, s'obrirà un formulari per editar-la.
+
+{{#forminput:form=Entitat|query string=namespace=Entitat}}
+
+</noinclude><includeonly>
+<div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"></div>
+{{{for template|Entitat}}}
+{| class="formtable"
+! Logo:
+| {{{field|Logo|uploadable|default filename={{PAGENAME}}.jpg|image preview}}}
+|-
+! URL:
+| {{{field|URL}}}
+|}
+{{{end template}}}
+{{{for template|EntitatPrioritat|multiple|label=Prioritat}}}
+{| class="formtable"
+|-
+! Prioritat (com més petit, més amunt en una llista)
+| {{{field|Prioritat|input type=text}}}
+|-
+! Festival
+| {{{field|Festival|input type=dropdown|values=Festival 2014,Festival 2015,Festival 2016|restricted}}}
+|}
+{{{end template}}}
+'''Text lliure:'''
+
+{{{standard input|free text|rows=10}}}
+
+
+{{{standard input|summary}}}
+
+{{{standard input|minor edit}}} {{{standard input|watch}}}
+
+{{{standard input|save}}} {{{standard input|preview}}} {{{standard input|changes}}} {{{standard input|cancel}}}
+</includeonly>
+
