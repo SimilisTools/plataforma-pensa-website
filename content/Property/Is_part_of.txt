@@ -1,0 +1,7 @@
+Aquesta és una propietat del tipus [[Té tipus::Pàgina]].
+
+Els valors permesos per a aquestes propietats són:
+* [[Permet valor::Festival 2014]]
+* [[Permet valor::Festival 2015]]
+* [[Permet valor::Festival 2016]]
+

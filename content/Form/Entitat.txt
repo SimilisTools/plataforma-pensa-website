@@ -23,7 +23,7 @@ si la pàgina amb aquest nom ja existeix, s'obrirà un formulari per editar-la.
 | {{{field|Prioritat|input type=text}}}
 |-
 ! Festival
-| {{{field|Festival|input type=dropdown|values=Festival 2014,Festival 2015,Festival 2016|restricted}}}
+| {{{field|Festival|input type=dropdown|values from property=Is_part_of|restricted}}}
 |}
 {{{end template}}}
 '''Text lliure:'''

@@ -1,0 +1,23 @@
+<noinclude>
+Aquesta és la plantilla 'EntitatPrioritat'.
+Que ha de ser cridada en el format següent:
+<pre>
+{{EntitatPrioritat
+|Prioritat=
+|Festival=
+}}
+</pre>
+Edita la pàgina per veure el text de la plantilla.
+</noinclude><includeonly>{| class="wikitable"
+! Prioritat
+| {{{Prioritat|100}}}
+|-
+! Festival
+| {{{Festival|Festival 2014}}}
+|}{{#if:{{{Prioritat|}}}|{{#set_internal:Prioritat
+ |Has Priority={{{Prioritat|100}}}
+ |Is part of={{{Festival|Festival 2014}}}
+ |Ref={{FULLPAGENAME}}
+}}}}<nowiki />
+</includeonly>
+
