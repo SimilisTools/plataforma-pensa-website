@@ -22,4 +22,4 @@ MARIADB_HOST=`docker inspect --format '{{ .NetworkSettings.IPAddress }}' platafo
 
 echo $MARIADB_HOST
 
-docker run -p 10080:80 --name plataforma-pensa -d plataforma-pensa
+docker run -p $PORT:80 --name plataforma-pensa -d plataforma-pensa
