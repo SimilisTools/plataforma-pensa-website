@@ -1,4 +1,4 @@
-t# plataforma-pensa-website
+# plataforma-pensa-website
 Repository for storing configuration of Plataforforma Pensa website
 
 
@@ -6,3 +6,7 @@ Repository for storing configuration of Plataforforma Pensa website
 * A MariaDB and a NGINX based PHP images are created.
 * sh plataforma-pensa.sh for starting the process.
 * Finally, run: docker run -p PORT:80 --name plataforma-pensa -d plataforma-pensa (where PORT number to be used in the host)
+
+## TODO
+
+Ldap auto-configuration
