@@ -1,0 +1,16 @@
+<noinclude>
+Aquesta és la plantilla 'Ponència'.
+Que ha de ser cridada en el format següent:
+<pre>
+{{Ponencia
+|Nom=
+|Paper=
+|Prioritat=
+}}
+</pre>
+Edita la pàgina per veure el text de la plantilla.
+</noinclude><includeonly>{{#if:{{{Nom|}}}|{{#set_internal:Presentation
+ |Is Presented by=Ponent:{{{Nom|}}}
+ |Has Presentation Role={{{Paper|}}}
+ |Has Priority={{{Prioritat|}}}
+}}}}<nowiki /></includeonly>
