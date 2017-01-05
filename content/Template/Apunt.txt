@@ -1,0 +1,18 @@
+<noinclude>
+Pantilla apunt per als enviaments en MediWiki.
+<pre>
+{{Apunt
+|Títol=
+|Cos=
+|Etiqueta=
+|Llengua=
+|Autor=
+|Aprovat=
+|Data_publicat=
+|Mida_Resum=
+}}
+</pre>
+Editeu la pàgina per a veure'n el contingut.
+</noinclude><includeonly>{{#ifeq:{{#show:{{FULLPAGENAME}}|?Is Approved#}}|false|__NOINDEX__}}{{DISPLAYTITLE:{{{Títol}}}}}[[Is in Language::{{{Llengua|}}}|]][[Is Approved::{{{Aprovat|false}}}|]]<div class="post"><h3>[[Has Title::{{{Títol|}}}]]</h3><div class="post_subtitle">Publicat el [[Publication date::{{{Data_publicat|}}}|]] {{#timel: d F Y, H:i|{{{Data_publicat}}}}}<!-- per ''[[Has Author::{{{Autor}}}]]''-->[[Has Author::{{{Autor}}}| ]]{{Social}}</div>
+<div class="post_body">{{{Cos|}}}{{#set:Has Body={{{Cos|}}} }}</div></div>{{#set:Has Summary Size={{{Mida_Resum|100}}}}}[[Categoria:Apunts]]
+</includeonly>

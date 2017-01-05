@@ -1,0 +1,1 @@
+<noinclude>Plantilla per a les notícies del bloc en portada.</noinclude><includeonly><div class="front_post"><div class="front_post_title">[[{{{1}}}|{{{2}}}]]</div><div class="front_post_subtitle">Publicat el {{#time: d F Y, H:i|{{{3|}}}}}</div><div class="front_post_body">{{#extractText:{{{5|}}}|{{{6|100}}}|…}} ([[{{{1}}}|'''+''']])</div></div></includeonly>

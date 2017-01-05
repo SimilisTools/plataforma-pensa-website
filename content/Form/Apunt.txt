@@ -1,0 +1,35 @@
+<noinclude>
+Aquest és un formulari per a escriure apunts per a Viquimèdia.
+
+{{#forminput:Apunt|25||Start|namespace=Apunt}}
+</noinclude><includeonly>
+{{{info|add title=Empleneu els camps a continuació|edit title=Empleneu els camps a continuació|page name=Apunt:<Apunt[Títol]>_<unique number>}}}
+<div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"></div>
+{{{for template|Apunt|label=Apunt}}}
+{| class="formtable"
+! Títol:
+| {{{field|Títol|mandatory|input type=text|size=85}}}
+|-
+! Cos:
+| {{{field|Cos|input type=textarea|rows=20|cols=100|editor=wikieditor}}}
+|-
+! Etiquetes (''tags''):
+| {{{field|Etiqueta|size=50|mandatory}}}<br />''Paraules claus, separau-les amb comes, per relacionar diferents apunts d'una temàtica similar.''
+|-
+! Llengua:
+| {{{field|Llengua|mandatory|input type=dropdown|size=15|values=ca,en,es,fr,it,oc|default=ca}}}<br />''Codi de la llengua en què està escrit l'apunt''
+|-
+! Autor de l'apunt:
+| {{{field|Autor|input type=text|default=current user|restricted|autocomplete on namespace=Usuari}}}<br />''Usuari a qui se li atribueix l'autoria de l'apunt''
+|-
+! Data de publicació:
+| {{{field|Data_publicat|default=now|input type=datetimepicker}}}<br />''La data en què es mostrarà al bloc. Per defecte, la data de creació de l'apunt.''<br />Aneum amb compte que, en canviar-ho un cop establert per primer cop, podeu crear entrades repetides en el canal RSS.''
+|-
+! Mida del resum (en caràcters)
+| {{{field|Mida_Resum|default=100}}}
+|-
+! Aprovat:
+| {{{field|Aprovat|input type=checkbox|restricted=editor,sysop}}}<br />''Si teniu prou permisos, podeu marcar aquesta casella per fer que aquest apunt sigui públic per a tothom.<br />Consulteu-ho amb la resta de companys si no n'esteu segur.''
+|}
+{{{end template}}}
+{{{standard input|save}}}{{{standard input|cancel}}}</includeonly>

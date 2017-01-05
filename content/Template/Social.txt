@@ -1,0 +1,1 @@
+<includeonly>{{#TwitterFBLike:right|small|recommend,via=...|{{PAGENAME}}|twitter,facebook}}</includeonly>
