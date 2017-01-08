@@ -1,12 +1,12 @@
 # plataforma-pensa-website
 Repository for storing configuration of Plataforforma Pensa website
 
+It uses Docker as build and deployment platform. MediaWiki is used as base CMS.
 
-* Parameters are stored in plataforma-pensa.sh script.
-* A MariaDB and a NGINX based PHP images are created.
-* sh plataforma-pensa.sh for starting the process.
-* Finally, run: docker run -p PORT:80 --name plataforma-pensa -d plataforma-pensa (where PORT number to be used in the host)
+You can start by using one of the following scripts:
+* plataforma.sh ( to use first time. A MariaDB and a NGINX based PHP Docker images are created. )
+* plataforma-start.sh ( to use once images are already built )
 
 ## TODO
 
-Ldap auto-configuration
+* LDAP auto-configuration
