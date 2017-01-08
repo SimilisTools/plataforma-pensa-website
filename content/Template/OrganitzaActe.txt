@@ -1,0 +1,1 @@
+<includeonly>{{#if:{{{1|}}}|<div class="collabora-logo">[[{{#show:{{{1}}}|?Has Image#}}|200px|{{#show:{{{1}}}|?Has Name#}}|link={{#show:{{{1}}}|?Has URL#}}]]</div>}}</includeonly>

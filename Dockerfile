@@ -71,7 +71,8 @@ RUN cd /var/www/w; php maintenance/install.php \
 RUN echo "\n\
 enableSemantics( '${DOMAIN_NAME}' );\n\
 include_once \"\$IP/LocalSettings.local.php\";\n\
-#include_once \"\$IP/LocalSettings.ldap.php\";" >> /var/www/w/LocalSettings.php
+#include_once \"\$IP/LocalSettings.ldap.php\";\n\
+" >> /var/www/w/LocalSettings.php
 
 RUN cd /var/www/w; composer update --no-dev;
 

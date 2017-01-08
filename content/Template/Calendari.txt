@@ -1,0 +1,1 @@
+<includeonly>{{#if:{{{2|}}}| {{#AddToCalendar:start={{#time:c|{{{1|}}}}}|end={{#time:c|{{{2|}}}}}|title={{{3}}}|description={{#extractText:{{{4|}}}|30|…}}|address={{{5|}}} }}|  {{#AddToCalendar:start={{#time:c|{{{1|}}}}}|end={{#time:c|{{{1|}}} + 90 minutes }}|title={{{3}}}|description={{#extractText:{{{4|}}}|30|…}}|address={{{5|}}} }} }}</includeonly>

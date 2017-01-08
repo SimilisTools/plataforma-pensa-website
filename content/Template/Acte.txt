@@ -1,0 +1,64 @@
+<noinclude>
+Aquesta és la plantilla 'Acte'.
+Que ha de ser cridada en el format següent:
+<pre>
+{{Acte
+|Nom=
+|Logo=
+|Lloc=
+|Detalls_Lloc=
+|Inici=
+|Final=
+|Ponent=
+|Tipus=
+|Categoria=
+|Etiqueta=
+|Hashtag=
+|Preu=
+|Acces=
+|Festival=
+|Cancel=
+}}
+</pre>
+Edita la pàgina per veure el text de la plantilla.</noinclude><includeonly><nowiki/>__NOTOC__<nowiki />
+[[Has Twitter ID::{{{TwitterID|}}}| ]]{{#seo:
+|title={{PAGENAME}} - {{SITENAME}}
+|keywords={{{Etiqueta|}}}
+|description={{#extractText:{{{Descripció|}}}|30|…}}
+|og:image={{filepath:{{{Logo|}}}|300}}
+|twitter:image:src={{filepath:{{{Logo|}}}|300}}
+|twitter:card=summary
+|twitter:site=@barcelonapensa
+ }}<nowiki />
+<div id="event" class="taula-acte" itemscope="" itemtype="http://schema.org/Event"><div class="left"><div class="cap-acte"><div class="logo">[[Has Image::Image:{{{Logo|BarcelonaPensa_sinfecha1.png}}}| ]][[Image:{{{Logo|BarcelonaPensa_sinfecha1.png}}}|75px|link=]]<meta itemprop="image" content="{{filepath:{{{Logo|BarcelonaPensa_sinfecha1.png}}}}}" /></div>[[Has Name::{{PAGENAME}}| ]]<h3 class="acte" id="event-name" itemprop="name">{{PAGENAME}}</h3><div class="info">
+<div class="logistics"><span class="location" itemscope="" itemprop="location" itemtype="http://schema.org/Place"><span itemprop="name" class="name">[[Has Location::Lloc:{{{Lloc|}}}|{{{Lloc|}}}]]</span><span itemprop="address" content="{{#show:Lloc:{{{Lloc|}}}|?Has Address}}"></span>{{#if:{{{Detalls_Lloc|}}}|&nbsp;({{{Detalls_Lloc|}}})}}</span> | {{#ifeq:{{{Categoria|}}}|Activitats transversals|{{DatesExposició|{{{Inici|}}}|{{{Final|}}}}}|{{DatesActe|{{{Inici|}}}|{{{Final|}}}}}}}</div></div>
+<div class="speakers">
+{{#ask:[[Presentation::{{FULLPAGENAME}}]]|?Is Presented by#|?Has Presentation Role|sort=Has Priority,Is Presented by|order=asc|mainlabel=-|format=template|sep=,|template=PresentaActe}}
+</div>
+</div><nowiki />
+<div class="description">{{#set:Has Description={{{Descripció|}}}}}{{{Descripció|}}}</div><meta itemprop="description" content="{{#extractText:{{{Descripció|}}}|30|…}}" />
+{{#ifeq:{{{Acces|}}}|||<div class="access"><span class="label-acte">Accés:</span> {{#set:Has Access={{{Acces}}}}}{{Acces|{{{Acces|}}}|{{{Preu|}}}}}</div>}}
+{{#if:{{{Preu|}}}|<div class="price"><span class="label-acte">Preu:</span> [[Has Price::{{{Preu|}}}]] €</div>}}
+<div class="topic">
+<span class="type">[[Is Type::{{{Tipus|}}}]]</span> {{#if:{{{Categoria|}}}|— <span class="category">[[Has Category::{{{Categoria|}}}]] </span>|{{#set:Has Category=Genèrica}}}}<nowiki />
+<div id="share" class="share">{{#TwitterFBLike:right|small|recommend,via=barcelonapensa|{{PAGENAME}} {{{Hashtag|#BCNPensa}}}|twitter,facebook}}<nowiki />
+{{Calendari|{{{Inici|}}}|{{{Final|}}}|{{PAGENAME}}|{{{Descripció|}}}|{{{Lloc|}}}}}<nowiki />
+</div></div>
+</div>
+<div class="right">
+{{#ifexpr:{{#ask:[[Organization::{{FULLPAGENAME}}]]|format=count}} > 0|
+<div id="collabora">{{#ask:[[Organization::{{FULLPAGENAME}}]]|?Is Organized by#|?Has Organization Role|sort=Has Priority,Is Organized by|order=asc|mainlabel=-|format=template|template=OrganitzaActe}}</div>}}
+</div>
+</div>
+{{#if:{{{Etiqueta|}}}|<span class="label-acte">Etiquetes:</span> {{#arraymap:{{{Etiqueta|}}}|,|@@|[[Has Tag::@@]]}} }}[[Has Hashtag::{{{Hashtag|}}}| ]]
+{{#ifeq:{{{Inscripcio|}}}|||<div class="inscripcio">{{Inscripcio|{{{Festival|}}}|{{SERVER}}{{{Inscripcio|}}}}}</div>}}
+<div id="recursos">
+{{#ifingroup:user|<span class="label">Nom:</span> {{#forminput:form=Recurs|button text=Afegeix recurs|query string=namespace=Recurs&Recurs[Relacionat]={{PAGENAME}}|link type=button}} 
+[{{SERVER}}/{{FULLPAGENAMEE}}?action=purge Recarrega la llista de recursos]}}
+{{#ifexpr:{{#ask:[[Recurs:+]][[Related To::{{FULLPAGENAME}}]]|format=count}} > 0|
+==== Recursos ====
+<div class="llista">
+{{#ask:[[Recurs:+]][[Related To::{{FULLPAGENAME}}]]|?Has Title|?Is Publication Type|?Has URL|?Has Description|link=none|format=template|template=RecursActe|userparam={{{Hashtag|}}}|sort=Has Priority|order=asc}}
+</div>}}</div>{{#if:{{{Festival|}}}|[[Is part of::{{{Festival|Festival 2014}}}| ]]|[[Is part of::Festival 2014| ]]}}<nowiki />
+{{#if:{{{Cancel|}}}|[[Is Cancelled::{{{Cancel|}}}| ]]|[[Is Cancelled::false| ]]}}[[Categoria:Actes]]
+</includeonly>

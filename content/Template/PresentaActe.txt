@@ -1,0 +1,1 @@
+<includeonly>{{#ask:[[{{{1|}}}]]|?Has PreName#|?Has Surname#|?Has Institution#|mainlabel=-|headers=hide|format=template|template=MostraNom|limit=1}}</includeonly>

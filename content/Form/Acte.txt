@@ -1,0 +1,83 @@
+<noinclude>
+Aquest és el formulari 'Acte'.
+Per crear una pàgina amb aquest formulari, entreu el nom de la pàgina a continuació;
+si la pàgina amb aquest nom ja existeix, s'obrirà un formulari per editar-la.
+
+{{#forminput:form=Acte|query string=namespace=Acte|size=60}}
+
+</noinclude><includeonly>
+<div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"></div>
+{{{for template|Acte|label=Acte}}}
+{| class="formtable"
+! Logo:
+| {{{field|Logo|input type=text|uploadable|restricted}}}
+|-
+! Lloc:
+| {{{field|Lloc|input type=dropdown|values from namespace=Lloc}}}
+|-
+! Detalls addicionals del lloc:
+| {{{field|Detalls_Lloc|input type=text}}}
+|-
+! Inici:
+| {{{field|Inici|input type=datetimepicker|mandatory}}}
+|-
+! Final:
+| {{{field|Final|input type=datetimepicker}}}
+|-
+! Tipus:
+| {{{field|Tipus|values=Cabaret filosòfic,Cafè filosòfic,Col·lecció,Col·loqui,Conferència,Conferència-Debat,Dansa i Col·loqui,Debat,Exposició,Intervenció i Col·loqui,Jornada,Lab,Presentació,Taller,Teatre i Col·loqui,Trobada|input type=dropdown}}}
+|-
+! Categoria:
+| {{{field|Categoria|input type=text}}}
+|-
+! Etiquetes:
+| {{{field|Etiqueta|input type=text|list}}}
+|-
+! Hashtag:
+| {{{field|Hashtag|input type=text}}}
+|-
+! Accés
+| {{{field|Acces|input type=dropdown|values from Property=Has Access}}}
+|-
+! Preu:
+| {{{field|Preu|input type=text}}}
+|- 
+! Descripció
+|  {{{field|Descripció|input type=textarea|editor=wikieditor}}}
+|-
+! Festival
+| {{{field|Festival|input type=dropdown|values from Property=Is part of|restricted}}}
+|-
+! Cancel·lat
+| {{{field|Cancel|input type=checkbox}}}
+|}
+{{{end template}}}
+{{{for template|Ponencia|multiple|label=Ponent}}}
+{| class="formtable"
+|-
+! Ponent:
+| {{{field|Nom|values from namespace=Ponent|input type=dropdown}}}
+|-
+! Paper:
+| {{{field|Paper|input type=text}}}
+|-
+| Prioritat:
+| {{{field|Prioritat|input type=text}}}
+|}
+{{{end template}}}
+{{{for template|Organitzacio|multiple|label=Organitzen o col·laboren}}}
+{| class="formtable"
+|-
+! Entitat:
+| {{{field|Nom|values from namespace=Entitat|input type=dropdown}}}
+|-
+! Paper:
+| {{{field|Paper|input type=text}}}
+|-
+! Prioritat:
+| {{{field|Prioritat|input type=text}}}
+|}
+{{{end template}}}
+
+{{{standard input|save}}} {{{standard input|cancel}}}
+</includeonly>

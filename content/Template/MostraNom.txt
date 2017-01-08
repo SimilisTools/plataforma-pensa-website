@@ -1,0 +1,2 @@
+<includeonly><span itemprop="performer" itemscope="name" itemtype="http://schema.org/Person"><span itemprop="name">{{{1|}}} {{{2|}}}</span><nowiki />
+{{#if:{{{3|}}}|&nbsp;(<span itemprop="affiliation">{{{3|}}}</span>)}}</span></includeonly>
