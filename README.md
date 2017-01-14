@@ -1,4 +1,7 @@
 # plataforma-pensa-website
+
+[![Build Status](https://secure.travis-ci.org/SimilisTools/plataforma-pensa-website.svg?branch=master)](http://travis-ci.org/SimilisTools/plataforma-pensa-website)
+
 Repository for storing configuration of Plataforforma Pensa website
 
 It uses Docker as build and deployment platform. MediaWiki is used as base CMS.
